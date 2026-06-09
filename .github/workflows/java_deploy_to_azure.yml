@@ -2,6 +2,14 @@ name: Deploy Java JAR to Azure App Service
 
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select the deployment environment'
+        required: true
+        default: 'production'
+        options:
+          - production
+          - staging
   push:
     branches: [ feat/devops-main ]
   pull_request:
