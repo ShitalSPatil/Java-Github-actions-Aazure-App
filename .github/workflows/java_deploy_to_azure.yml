@@ -3,7 +3,7 @@ name: Deploy Java JAR to Azure App Service
 on:
   workflow_dispatch:
   push:
-    branches: "feat/devops-main"
+    branches: [ feat/devops-main ]
   pull_request:
     branches: [ main ]
 
